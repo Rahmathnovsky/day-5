@@ -1,0 +1,210 @@
+<html>
+<head>
+    <title>Batch 33 | Add Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/wtf-forms.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<!--Navbar-->
+    <nav class="bg-nav">
+        <div class="nav-left">
+            <img src="img/dumbays.png" alt="logo" style="width: 60px; height: auto; margin: 15px 60px;">
+
+            <a href="index.html" style="text-decoration: none;"> <p style="margin-left: 38%; margin-top: -10%; font-size: 20px; color: black;">
+                Home
+            </p></a>
+
+            <a href="detail-blog.html" style="text-decoration: none;"> <p style="margin-left: 59%; margin-top: -9.3%; font-size: 20px; color: black;">
+                My Project
+            </p></a>
+
+            <!-- <ul>
+                <li style="display: inline;"> </li>
+                <a href="index.html"><li style="display: inline; font-size: 20px; color: black; font-weight: bold;">Home</li></a>
+                <a href="card.html"><li style="display: inline; font-size: 20px; color: black; margin: 30px auto;">MyProject</li></a>
+            </ul> -->
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">
+                <button class="nav-button" style="cursor: pointer;">CONTACT</button>  
+            </a>
+        </div>
+    </nav>
+<!--END Navbar-->
+
+<body style="background-color: rgb(214, 219, 221); margin: 0;">
+    <div>
+        <h2 style="text-align: center; color: rgb(230, 70, 11);">ADD MY PROJECT</h2>
+        <form style="margin: 30px auto; width: 390px;">
+            <div type="text" style="font-size: 20px;">
+                <label for="in-projectName" style="display: block;">Project Name</label>
+                <input type="text" id="in-projectName" style=" box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border: 1px solid white; border-radius: 5px; width: 450px; height: 6%; font-size: large;">
+            </div>
+            <div type="text" style="font-size: 20px;">
+                <label for="in-projectName" style="display: block; margin-top: 5%;">Start Date</label>
+                <input type="date" id="in-projectName" style="font-size: 20px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border: 1px solid white; border-radius: 5px; width: 200px;">
+            </div>
+            <div type="text" style="font-size: 20px; margin-left: 64.3%; margin-top: -13.7%;">
+                <label for="in-projectName" style="display: block;">End Date</label>
+                <input type="date" id="in-projectName" style="font-size: 20px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border: 1px solid white; border-radius: 5px; width: 200px;">
+            </div>
+            <div style="font-size: 20px; margin-top: 20px;">
+                <label for="in-description" style="display: block;">Description</label>
+                <textarea id="in-description" style="resize: vertical; height: 110px; border: 1px solid white; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); border-radius: 5px; width: 455px;"></textarea>
+            </div>
+            <div style="font-size: 20px; margin-top: 20px;">
+                <label for="in-description" style="display: block;">Technologies</label>
+                <div style="display: flex; margin-top: 3%;">
+                    <input type="checkbox">
+                    <label for="in-description" style="display: block;">React JS</label>
+                    <input type="checkbox" style="margin-left: 41%;">
+                    <label for="in-description" style="display: block;">Node JS</label>
+                </div>
+                <div style="display: flex;">   
+                    <input type="checkbox">
+                    <label for="in-description" style="display: block;">Javascript</label>
+                    <input type="checkbox" style="margin-left: 38.4%;">
+                    <label for="in-description" style="display: block;">Next JS</label>
+                </div>
+                <div style="margin-top: 4%;">
+                    <label class="file" style="width: 457px;">
+                    <input type="file"><span class="file-custom" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);"></span></label>
+                </div>
+            </div>
+            <!-- <div style="font-size: 20px; margin-top: 10px;">
+                <label for="in-description" style="display: block;">Upload Image</label>
+                <input type="file">
+            </div> -->
+
+            <div style="margin-top: 40px;">
+                <button class="bg-button" style="cursor: pointer; margin-left: 91%;" onclick="submitData()" type="button">submit</button>
+            </div>
+        </from>
+    </div>
+    <div style="background-color: rgb(211, 208, 208);">
+        <h2 style="text-align: center; color: rgb(230, 70, 11);">ALL MY PROJECT </h2>
+
+        <div class="card2" style="margin-top: 10px; background-color: white; border-radius: 5%; margin: 5%;"> 
+            <div style="margin: 0%; padding: 5%;">
+                <img src="img/desk.png" style="width:100%; border-radius: 5px;">
+                <div>
+                    <h4><b>Information Technologies - 2030</b><br><small>Duration: 3 month</small></h4> 
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem suscipit sapiente, aliquid ab vero. Itaque assumenda asperiores minus.</small>
+                    <div style="margin-top: 10%;">
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                        <i class="fa-brands fa-apple" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-youtube" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-safari" style="margin-left: 3%;"></i>
+                        <i class="fa-solid fa-sidebar" style="margin-left: 3%;"></i>
+                    </div>
+                    <div style="display: flex; margin-top: 10%;">
+                        <button style="border: 1px solid white; border-radius: 10%; background-color: yellowgreen; width: 50%; height: 25px;">Edit</button>
+                        <button style="border: 1px solid white; background-color: red; border-radius: 10%; width: 50%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card2" style="background-color: white; border-radius: 5%; margin-left: 28.5%; margin-top: -35.2%;"> 
+            <div style="margin: 0%; padding: 5%;">
+                <img src="img/squad.png" style="width:100%; border-radius: 5px;">
+                <div>
+                    <h4><b>The Suicide Squad - 2021</b><br><small>Duration: 3 month</small></h4> 
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem suscipit sapiente, aliquid ab vero. Itaque assumenda asperiores minus.</small>
+                    <div style="margin-top: 10%;">
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                        <i class="fa-brands fa-apple" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-youtube" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-safari" style="margin-left: 3%;"></i>
+                        <i class="fa-solid fa-sidebar" style="margin-left: 3%;"></i>
+                    </div>
+                    <div style="display: flex; margin-top: 10%;">
+                        <button style="border: 1px solid white; border-radius: 10%; background-color: yellowgreen; width: 50%; height: 25px;">Edit</button>
+                        <button style="border: 1px solid white; background-color: red; border-radius: 10%; width: 50%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card2" style="background-color: white; border-radius: 5%; margin-left: 52.3%; margin-top: -32%;"> 
+            <div style="margin: 0%; padding: 5%;">
+                <img src="img/bruce.png" style="width:100%; border-radius: 5px;">
+                <div>
+                    <h4><b>Batman of Gottam City - 2006</b><br><small>Duration: 3 month</small></h4> 
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem suscipit sapiente, aliquid ab vero. Itaque assumenda asperiores minus.</small>
+                    <div style="margin-top: 10%;">
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                        <i class="fa-brands fa-apple" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-youtube" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-safari" style="margin-left: 3%;"></i>
+                        <i class="fa-solid fa-sidebar" style="margin-left: 3%;"></i>
+                    </div>
+                    <div style="display: flex; margin-top: 10%;">
+                        <button style="border: 1px solid white; border-radius: 10%; background-color: yellowgreen; width: 50%; height: 25px;">Edit</button>
+                        <button style="border: 1px solid white; background-color: red; border-radius: 10%; width: 50%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card2" style="background-color: white; border-radius: 5%; margin-left: 75.5%; margin-top: -32%;"> 
+            <div style="margin: 0%; padding: 5%;">
+                <img src="img/spiderman.png" style="width:100%; border-radius: 5px;">
+                <div>
+                    <h4><b>The New Spiderman - 2009</b><br><small>Duration: 3 month</small></h4> 
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem suscipit sapiente, aliquid ab vero. Itaque assumenda asperiores minus.</small>
+                    <div style="margin-top: 10%;">
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                        <i class="fa-brands fa-apple" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-youtube" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-safari" style="margin-left: 3%;"></i>
+                        <i class="fa-solid fa-sidebar" style="margin-left: 3%;"></i>
+                    </div>
+                    <div style="display: flex; margin-top: 10%;">
+                        <button style="border: 1px solid white; border-radius: 10%; background-color: yellowgreen; width: 50%; height: 25px;">Edit</button>
+                        <button style="border: 1px solid white; background-color: red; border-radius: 10%; width: 50%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- SECOND LIST -->
+        <div class="card2" style="margin-top: 10px; background-color: white; border-radius: 5%; margin: 5%;"> 
+            <div style="margin: 0%; padding: 5%;">
+                <img src="img/spiderman.png" style="width:100%; border-radius: 5px;">
+                <div>
+                    <h4><b>The Spiderman - 2005</b><br><small>Duration: 3 month</small></h4> 
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem suscipit sapiente, aliquid ab vero. Itaque assumenda asperiores minus.</small>
+                    <div style="margin-top: 10%;">
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                        <i class="fa-brands fa-apple" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-youtube" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-safari" style="margin-left: 3%;"></i>
+                        <i class="fa-solid fa-sidebar" style="margin-left: 3%;"></i>
+                    </div>
+                    <div style="display: flex; margin-top: 10%;">
+                        <button style="border: 1px solid white; border-radius: 10%; background-color: yellowgreen; width: 50%; height: 25px;">Edit</button>
+                        <button style="border: 1px solid white; background-color: red; border-radius: 10%; width: 50%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card2" style="background-color: white; border-radius: 5%; margin-left: 28.5%; margin-top: -35.2%;"> 
+            <div style="margin: 0%; padding: 5%;">
+                <img src="img/bruce.png" style="width:100%; border-radius: 5px;">
+                <div>
+                    <h4><b>Bruce aka Batman ? - 2021</b><br><small>Duration: 3 month</small></h4> 
+                    <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa quidem suscipit sapiente, aliquid ab vero. Itaque assumenda asperiores minus.</small>
+                    <div style="margin-top: 10%;">
+                        <i class="fa-solid fa-square-share-nodes"></i>
+                        <i class="fa-brands fa-apple" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-youtube" style="margin-left: 3%;"></i> 
+                        <i class="fa-brands fa-safari" style="margin-left: 3%;"></i>
+                        <i class="fa-solid fa-sidebar" style="margin-left: 3%;"></i>
+                    </div>
+                    <div style="display: flex; margin-top: 10%;">
+                        <button style="border: 1px solid white; border-radius: 10%; background-color: yellowgreen; width: 50%; height: 25px;">Edit</button>
+                        <button style="border: 1px solid white; background-color: red; border-radius: 10%; width: 50%;">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
